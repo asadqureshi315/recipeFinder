@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "0d951ae7-77ff-4e47-9443-8205c4a17ea2",
+		"name": "recipeFinder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31428025"
+	},
+	"item": [
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "chicken curry",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "40min",
+							"type": "text"
+						},
+						{
+							"key": "serving",
+							"value": "4-6",
+							"type": "text"
+						},
+						{
+							"key": "difficulty",
+							"value": "Mid",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Aromatic and flavorful curry with tender chicken and exotic spices in a rich coconut sauce.",
+							"type": "text"
+						},
+						{
+							"key": "incredients",
+							"value": "[\"inc 1\", \"inc 2\", \"inc 3\", \"inc 4\"]",
+							"type": "text"
+						},
+						{
+							"key": "instructions",
+							"value": "[\"step 1\", \"step 2\", \"step 3\", \"step 4\"]",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/Users/asadqureshi/Pictures/portfolio1.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/recipe/update/6854463117feadfc8e3377ac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"recipe",
+						"update",
+						"6854463117feadfc8e3377ac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/recipe/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"recipe",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "chicken curry",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "40min",
+							"type": "text"
+						},
+						{
+							"key": "serving",
+							"value": "4-6",
+							"type": "text"
+						},
+						{
+							"key": "difficulty",
+							"value": "Mid",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Aromatic and flavorful curry with tender chicken and exotic spices in a rich coconut sauce.",
+							"type": "text"
+						},
+						{
+							"key": "incredients",
+							"value": "[\"inc 1\", \"inc 2\", \"inc 3\", \"inc 4\"]",
+							"type": "text"
+						},
+						{
+							"key": "instructions",
+							"value": "[\"step 1\", \"step 2\", \"step 3\", \"step 4\"]",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/Users/asadqureshi/Pictures/portfolio1.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/recipe/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"recipe",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/recipe/get/6854463117feadfc8e3377ac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"recipe",
+						"get",
+						"6854463117feadfc8e3377ac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/recipe/delete/6854463117feadfc8e3377ac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"recipe",
+						"delete",
+						"6854463117feadfc8e3377ac"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
